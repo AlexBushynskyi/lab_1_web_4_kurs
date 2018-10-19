@@ -1,0 +1,37 @@
+.block_eight_background {
+	@include flexbox(flex, column, flex-start, center);
+	/*background: url(../img/background_block_three.png) center no-repeat;*/
+	max-width: 1920px;
+	width: 100%;
+	.block_eight {
+		margin-top: 20px;
+		.preim {
+			@include flexbox(flex, row, space-around, center);
+			div {
+				@include flexbox(flex, column, flex-end, center);
+				height: 170px;
+				width: 240px;
+				img {
+					height: 60px;
+					margin: 20px 0;
+				}
+				#image_20 {
+					height: 45px;
+				}
+			}
+			.border_box:hover {
+				box-shadow: 0px 17px 10px 0px $c_grey_light;
+			}
+			.preim_text{
+				text-align: center;
+				color: $c_red;
+				font-size: 24px;
+			}
+		}
+		.insertion_text {
+			font-size: 18px;
+			margin: 40px 0;
+			text-align: center;
+		}
+	}
+}

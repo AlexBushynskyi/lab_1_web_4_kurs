@@ -1,0 +1,59 @@
+.block_three_backgrond {
+	@include flexbox(flex, column, flex-start, center);
+	background: url(../img/background_block_three.png) center no-repeat;
+	max-width: 1920px;
+	width: 100%;
+	.block_three {
+		#text_galary {
+			color: $c_white;
+		}
+		.slider_2 {
+			width: 1200px;
+			margin-bottom: 70px;
+			div {
+				img {
+					width: 380px;
+					margin-bottom: 10px;
+				}
+			}
+			.slick-dots {
+				bottom: -45px;
+				li {
+					padding: 0;
+					width: 10px;
+					height: 10px;
+					button:before {
+						content: "•";
+						font-size: 10px;
+						line-height: 50px;
+						color: $c_white;
+						opacity: 10;
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
+			.slick-dots li.slick-active button:before {
+				color: $c_red;
+			}
+			.slick-slide:focus {
+				outline: none;
+			}
+		}
+		.but_more {
+			width: 290px;
+			height: 60px;
+			font-size: 18px;
+			color: $c_white;
+			border-radius: 5px;
+			background-color: $c_red;
+			margin: 100px auto 0;
+			text-align: center;
+			line-height: 60px;
+		}
+		.but_more:hover {
+			color: $c_grey;
+			background-color: $c_white;
+		}
+	}
+}

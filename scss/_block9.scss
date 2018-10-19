@@ -1,0 +1,31 @@
+.block_nine_background {
+	@include flexbox(flex, column, flex-start, center);
+	background: url(../img/background_block_nine.png) center no-repeat;
+	max-width: 1920px;
+	width: 100%;
+	.block_nine {
+		#block_nine_text{
+			@include flexbox(flex, column, flex-start, center);
+			#zamery {
+				font-size: 36px;
+				text-align: center;
+				width: 790px;
+				margin: 20px 0;
+			}
+			#zapis {
+				color: $c_red;
+				font-size: 48px;
+				margin: 20px 0;
+			}
+			.numbers, a {
+				font-size: 36px;
+				font-weight: bold;
+				color: $c_black;
+				margin-top: 20px;
+			}
+			a:hover {
+				color: $c_red;
+			}
+		}
+	}
+}

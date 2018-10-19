@@ -1,0 +1,38 @@
+.block_two_background {
+	@include flexbox(flex, column, flex-start, center);
+	/*background: url(../img/background_block_three.png) center no-repeat;*/
+	max-width: 1920px;
+	width: 100%;
+	z-index: 1;
+	.block_two {
+		@include flexbox(flex, row, space-between, flex-start);
+		flex-wrap: wrap;
+		div {
+			color: $c_black;
+		}
+		img {
+			margin-top: 50px;
+			margin-bottom: 20px;
+			width: 440px;
+		}
+		#text_company {
+			width: 640px;
+		}
+		#text_magaz {
+			width: 440px;
+			margin-bottom: 20px;
+		}
+		#text_preim {
+			color: $c_red;
+		}
+		#li_style {
+		    list-style-type: none;
+		    margin: 10px 0;
+		}
+		#li_style:before {
+			content: "—";
+			color: $c_red;
+			padding-right: 15px;
+		}
+	}
+}

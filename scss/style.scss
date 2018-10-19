@@ -1,0 +1,101 @@
+@import 'fonts';
+$custom_font: Myriad Pro;
+$c_red: #fe4844;
+$c_grey: #453d3d;
+$c_grey_light: #676263;
+$c_black: black;
+$c_white: white;
+
+@mixin flexbox($display, $flexdir, $justifycon, $alignitems) {
+	display: $display;
+	flex-direction: $flexdir;
+ 	justify-content: $justifycon;
+ 	align-items: $alignitems;
+}
+
+@keyframes spin {
+	from {transform:rotateY(0deg);}
+	to {transform:rotateY(360deg);}
+}
+
+p, a {
+	font-size: 14px;
+	color: $c_white;	
+	margin: 0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $c_red;
+}
+
+p {
+	span {
+		color: $c_red;
+	}
+}
+
+body {
+	margin: auto;
+	padding: 0px;
+}
+
+.all {
+	max-width: 1920px;
+	min-width: 1280px;
+	font-family: $custom_font;
+	overflow: auto;
+}
+
+.line {
+	max-width: 1920px;
+	width: 100%;
+	height: 1.5px;
+	background-color: $c_white;
+}
+
+#upper_text {
+	text-transform: uppercase;
+}
+
+.block_left_line {
+	border-left-style: solid;
+	border-left-color: $c_grey_light;
+	border-left-width: 1.5px;
+	padding-left: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.big_text {
+	font-size: 54px;
+	margin-bottom: 10px;
+}
+
+.block_two, .block_three, .block_four, .block_five, .block_six, .block_seven, .block_eight, .block_nine, .block_ten {
+	width: 1200px;
+	margin-bottom: 50px;
+}
+
+.color_black {
+	color: $c_black;
+}
+
+@import 'header';
+
+.wrap {
+	@include flexbox(flex, column, flex-start, center);
+	overflow: hidden;
+	@import 'block1';
+	@import 'block2';
+	@import 'block3';
+	@import 'block4';
+	@import 'block5';
+	@import 'block6';
+	@import 'block7';
+	@import 'block8';
+	@import 'block9';
+	@import 'block10';
+}
+
+@import 'footer';

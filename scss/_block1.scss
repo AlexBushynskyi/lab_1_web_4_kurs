@@ -1,0 +1,50 @@
+.slider_1 {
+	margin-bottom: 50px;
+	max-width: 1920px;
+	width: 100%;
+	height: 650px;
+	.slider_1_item_1 {
+		max-width: 1920px;
+		width: 100%;
+		@include flexbox(flex, column, space-around, center);
+		img {
+			min-width: 1920px;
+			width: 1920px;
+		}
+		.text_f_b {
+			@include flexbox(flex, column, flex-end, center);
+			z-index: 1;
+			position: relative;
+			top: -350px;
+			.text1 {
+				font-size: 57px;
+				font-weight: bolder;
+				color: $c_white;
+			}
+			.text2 {
+				font-size: 35px;
+				color: $c_white;
+			}
+
+			.text3 {
+				font-size: 50px;
+				color: $c_red;
+			}
+			.but_more {
+				width: 290px;
+				height: 60px;
+				font-size: 18px;
+				color: $c_white;
+				border-radius: 5px;
+				background-color: $c_red;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 60px;
+			}
+			.but_more:hover {
+				color: $c_grey;
+				background-color: $c_white;
+			}
+		}
+	}
+}
