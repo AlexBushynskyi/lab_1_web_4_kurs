@@ -5,6 +5,7 @@
 	width: 100%;
 	.block_eight {
 		margin-top: 20px;
+		color: $c_black;
 		.preim {
 			@include flexbox(flex, row, space-around, center);
 			div {

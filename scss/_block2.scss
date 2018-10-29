@@ -4,6 +4,7 @@
 	max-width: 1920px;
 	width: 100%;
 	z-index: 1;
+	margin-top: -20px;
 	.block_two {
 		@include flexbox(flex, row, space-between, flex-start);
 		flex-wrap: wrap;
@@ -25,11 +26,11 @@
 		#text_preim {
 			color: $c_red;
 		}
-		#li_style {
+		.li_style {
 		    list-style-type: none;
 		    margin: 10px 0;
 		}
-		#li_style:before {
+		.li_style:before {
 			content: "—";
 			color: $c_red;
 			padding-right: 15px;

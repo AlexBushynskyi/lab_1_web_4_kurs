@@ -1,4 +1,4 @@
-.header {
+header {
 	max-width: 1920px;
 	max-height: 190px;
 	width: 100%;
@@ -19,26 +19,35 @@
 			@include flexbox(flex, column, space-around, baseline);
 		}
 	}
-	.menu {
-		@include flexbox(flex, row, space-between, center);
+	nav {
 	 	max-width: 1200px;
 	 	width: 100%;
 	 	height: 50px;
-	 	div {
-	 		color: $c_white;
-	 	}
-	 	div:hover {
-	 		color: $c_red;
-	 	}
-		.call_back {
-			background-color: $c_grey_light;
-			border: none;
-			border-radius: 5px;
-			padding: 5px 20px;
+	 	ul {
+	 		@include flexbox(flex, row, space-between, center);
+	 		margin-top: 9px;
+	 		li {
+	 			list-style-type: none;
+			 	div {
+			 		color: $c_white;
+			 		height: 25px;
+			 		line-height: 25px;
+
+			 	}
+			 	div:hover {
+			 		color: $c_red_light;
+			 	}
+				.call_back {
+					background-color: $c_grey_light;
+					border: none;
+					border-radius: 5px;
+					padding: 5px 20px;
+				}
+			 	.call_back:hover {
+			 		background-color: $c_red;
+			 		color: $c_white;
+			 	}
+			}
 		}
-	 	.call_back:hover {
-	 		background-color: $c_red;
-	 		color: $c_white;
-	 	}
 	}
 }

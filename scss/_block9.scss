@@ -4,11 +4,13 @@
 	max-width: 1920px;
 	width: 100%;
 	.block_nine {
+		color: $c_black;
 		#block_nine_text{
 			@include flexbox(flex, column, flex-start, center);
 			#zamery {
 				font-size: 36px;
 				text-align: center;
+				color: black;
 				width: 790px;
 				margin: 20px 0;
 			}
@@ -20,7 +22,7 @@
 			.numbers, a {
 				font-size: 36px;
 				font-weight: bold;
-				color: $c_black;
+				color: black;
 				margin-top: 20px;
 			}
 			a:hover {

@@ -10,6 +10,24 @@ $(window).scroll(function() {
 	}
 });
 
+$(".call_back").click(function() {
+  $("#form-call-back,#over").addClass("showFlex");
+  $("body").css("overflow", "hidden");
+  $("#form_text").focus();
+});
+
+$("#confidentian").click(function(){
+    $("#confid,#over").addClass("showFlex");
+    $("#confid").focus();
+});
+
+$(".close").click(function() {
+  $("#form-call-back,#confid,#over").removeClass("showFlex");
+  $("body").css("overflow", "auto");
+  $(".all").focus();
+});
+
+
 element_id = "";
 
 $(".hiden").mouseover(function() {
@@ -174,6 +192,7 @@ $(document).ready(function(){
 		autoplay: false,
 		autoplaySpeed: 5000,
 		slidesToShow: 6,
+		arrows: false,
 		slidesToScroll: 6,
 		pauseOnHover: true
 	});
@@ -181,6 +200,7 @@ $(document).ready(function(){
 		autoplay: false,
 		autoplaySpeed: 5000,
 		slidesToShow: 6,
+		arrows: false,
 		slidesToScroll: 6,
 		pauseOnHover: true
 	});
@@ -188,6 +208,7 @@ $(document).ready(function(){
 		autoplay: false,
 		autoplaySpeed: 5000,
 		slidesToShow: 6,
+		arrows: false,
 		slidesToScroll: 6,
 		pauseOnHover: true
 	});
@@ -217,11 +238,17 @@ $(document).ready(function(){
 	});
 	$(".slider_6").slick({
 		autoplay: true,
+		slidesPerRow: 3,
 		autoplaySpeed: 5000,
-		slidesToShow: 3,
-		slidesToScroll: 3,
+    	rows: 2,
 		arrows: false,
 		dots: true,
 		pauseOnHover: true
 	});
 });
+
+/*
+		autoplay: true,
+		autoplaySpeed: 5000,
+		slidesToShow: 3,
+		slidesToScroll: 3,*/

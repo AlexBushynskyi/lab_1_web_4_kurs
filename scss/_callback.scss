@@ -1,0 +1,55 @@
+#over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100vh;
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 40%;
+    margin: auto;
+    background: #422a2a;
+    padding: 15px;
+  }
+  label {
+    color: #fff;
+  }
+  input, textarea, .close {
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .close {
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    cursor: pointer;
+    font-size: 33px;
+  }
+}
+
+.showFlex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}

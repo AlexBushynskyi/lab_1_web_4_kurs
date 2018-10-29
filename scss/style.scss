@@ -1,9 +1,10 @@
 @import 'fonts';
 $custom_font: Myriad Pro;
-$c_red: #fe4844;
-$c_grey: #453d3d;
+$c_red: #b6211e;
+$c_red_light: #fe4844;
+$c_grey: #4e4646;
 $c_grey_light: #676263;
-$c_black: black;
+$c_black: #666666;
 $c_white: white;
 
 @mixin flexbox($display, $flexdir, $justifycon, $alignitems) {
@@ -16,6 +17,10 @@ $c_white: white;
 @keyframes spin {
 	from {transform:rotateY(0deg);}
 	to {transform:rotateY(360deg);}
+}
+
+* {
+	scroll-behavior: smooth;
 }
 
 p, a {
@@ -31,7 +36,7 @@ a:hover {
 
 p {
 	span {
-		color: $c_red;
+		color: $c_red_light;
 	}
 }
 
@@ -40,9 +45,13 @@ body {
 	padding: 0px;
 }
 
+.font_size_18 {
+	font-size: 18px;
+}
+
 .all {
 	max-width: 1920px;
-	min-width: 1280px;
+	min-width: 1240px;
 	font-family: $custom_font;
 	overflow: auto;
 }
@@ -54,13 +63,13 @@ body {
 	background-color: $c_white;
 }
 
-#upper_text {
+.upper_text {
 	text-transform: uppercase;
 }
 
 .block_left_line {
 	border-left-style: solid;
-	border-left-color: $c_grey_light;
+	border-left-color: $c_black;
 	border-left-width: 1.5px;
 	padding-left: 20px;
 	margin-bottom: 30px;
@@ -99,3 +108,29 @@ body {
 }
 
 @import 'footer';
+
+@import 'callback';
+
+
+
+
+#confid{
+    display: none;
+    flex-direction: column;
+    color: #fff;
+    background: #000;
+    text-align: justify;
+    padding: 50px;
+    overflow-y: scroll;
+    .call_back {
+		background-color: $c_grey_light;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 20px;
+		width: 200px;
+	}
+ 	.call_back:hover {
+ 		background-color: $c_red;
+ 		color: $c_white;
+ 	}
+}

@@ -4,6 +4,7 @@
 	max-width: 1920px;
 	width: 100%;
 	.block_six {
+		color: $c_black;
 		.new_pop_model {
 			@include flexbox(flex, row, flex-start, flex-start);
 			div {
@@ -11,6 +12,7 @@
 				width: 290px;
 				height: 58px;
 				background-color: $c_red;
+				color: black;
 				border-radius: 5px;
 				text-align: center;
 				line-height: 60px;

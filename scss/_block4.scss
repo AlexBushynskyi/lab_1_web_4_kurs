@@ -4,15 +4,17 @@
 	max-width: 1920px;
 	width: 100%;
 	.block_four {
+		color: $c_black;
 		.shpon {
 			@include flexbox(flex, row, space-around, flex-start);
+			flex-wrap: wrap;
 			margin: 20px 0;
 			div {
 				font-size: 32px;
 				color: $c_red;
 			}
 			#massiv {
-				color: black;
+				color: $c_black;
 			}
 		}
 		.slider_3 {
